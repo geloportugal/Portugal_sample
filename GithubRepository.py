@@ -5,7 +5,7 @@ LoanLim = SlryAmt*10
 
 AmtLoan = float(2500000)
 
-MosToPay = 7
+MosToPay = 50
 LoanInt = 0.10
 InsTotal = AmtLoan+(AmtLoan*LoanInt)
 MthlyPay = InsTotal / MosToPay
