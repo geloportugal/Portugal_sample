@@ -5,15 +5,17 @@ LoanLim = SlryAmt*10
 
 AmtLoan = float(2500000)
 
-MosToPay = 50
-LoanInt = 0.10
-InsTotal = AmtLoan+(AmtLoan*LoanInt)
-MthlyPay = InsTotal / MosToPay
+
 
 if(SlryAmt>=AmtMin):
     if(AmtLoan<=LoanLim):
         print("For how many Months would you like to pay?")
-        print(MosToPay) 
+
+        MosToPay = 50
+        LoanInt = 0.10
+        InsTotal = AmtLoan+(AmtLoan*LoanInt)
+        MthlyPay = InsTotal / MosToPay
+        
         print("Great! Your monthly instalment total would be" , MthlyPay)
     else:
         print("I'm sorry, your Loan Request exceeds the limit amount. Your Max loan amount is only" , LoanLim)
