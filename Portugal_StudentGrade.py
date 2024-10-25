@@ -21,7 +21,7 @@ if prelim and midterm and finals >= 40 and prelim and midterm and finals <=100:
     #Add prelim, midterm and finals grade
     grade = prelim_r + midterm_r + finals_r
     
-    grade = round()
+    grade = round(grade)
     
     print(f"Your final grade: {grade}")
     
