@@ -74,6 +74,7 @@ while True:
 
     print(f"Added {quantity} x {item_name} to your cart.")
 
+#Summary before purchase confirmation
 while True:
     print("\nThis is the summary of your cart:")
     total = 0
@@ -125,6 +126,7 @@ while True:
     else:
         print("Invalid choice. Please choose again.")
 
+#Payment
 payment = 0
 while True:
     total = 0
@@ -144,4 +146,5 @@ while True:
         continue
     break
 
+#Generate the Receipt
 generate_receipt(cart, items, payment)
